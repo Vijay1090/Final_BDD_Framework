@@ -18,7 +18,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 				"html:target/cucumber-reports/cucumber-pretty",
 				// "html:target/cucumber-reports/cucumber-pretty.html",
 				"rerun:target/rerun.txt",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "")
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, tags = "@DominosUITestRunner")
 
      public class UITestRunner<CucumberFeatureWrapper> {
 
