@@ -2,10 +2,10 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.qeaintegrationtests</groupId>
-	<artifactId>QEA-Integration-Tests</artifactId>
+	<groupId>com.FinalBDD</groupId>
+	<artifactId>Final_BDD_Framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>QEA-Integration-Tests</name>
+	<name>Final_BDD_Framework</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

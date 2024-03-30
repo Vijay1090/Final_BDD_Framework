@@ -1,135 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-27T17:38:11 IST" name="Default suite" finished-at="2024-03-27T18:38:14 IST" duration-ms="3603268">
+  <suite started-at="2024-03-29T12:13:13 IST" name="Default suite" finished-at="2024-03-29T12:15:33 IST" duration-ms="140075">
     <groups>
     </groups>
-    <test started-at="2024-03-27T17:38:11 IST" name="Default test" finished-at="2024-03-27T18:38:14 IST" duration-ms="3603268">
+    <test started-at="2024-03-29T12:13:13 IST" name="Default test" finished-at="2024-03-29T12:15:33 IST" duration-ms="140075">
       <class name="com.testrunner.UITestRunner">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-27T17:38:11 IST" name="beforeClass" finished-at="2024-03-27T17:38:13 IST" duration-ms="2553" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-29T12:13:13 IST" name="beforeClass" finished-at="2024-03-29T12:13:14 IST" duration-ms="1562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-27T17:38:13 IST" name="setup" finished-at="2024-03-27T18:38:14 IST" duration-ms="3600475" status="FAIL">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--enable-javascript, --incognito, --disable-extensions, --disable-notifications, --remote-allow-origins=*, --start-maximized], extensions: []}}, error Command failed with code: 1, executed: [--browser, chrome, --language-binding, java, --output, json]
-
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--enable-javascript, --incognito, --disable-extensions, --disable-notifications, --remote-allow-origins=*, --start-maximized], extensions: []}}, error Command failed with code: 1, executed: [--browser, chrome, --language-binding, java, --output, json]
-
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:48)
-at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
-at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at com.base.BrowserFactory.openBrowser(BrowserFactory.java:31)
-at com.testrunner.UITestRunner.setup(UITestRunner.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 1, executed: [--browser, chrome, --language-binding, java, --output, json]
-
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:159)
-at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:303)
-at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-29T12:13:14 IST" name="setup" finished-at="2024-03-29T12:13:24 IST" duration-ms="9801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, java.lang.Object)[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-27T18:38:14 IST" name="runScenario" description="Scenario Name: " data-provider="scenarios" finished-at="2024-03-27T18:38:14 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--enable-javascript, --incognito, --disable-extensions, --disable-notifications, --remote-allow-origins=*, --start-maximized], extensions: []}}, error Command failed with code: 1, executed: [--browser, chrome, --language-binding, java, --output, json]
-
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--enable-javascript, --incognito, --disable-extensions, --disable-notifications, --remote-allow-origins=*, --start-maximized], extensions: []}}, error Command failed with code: 1, executed: [--browser, chrome, --language-binding, java, --output, json]
-
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:48)
-at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
-at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at com.base.BrowserFactory.openBrowser(BrowserFactory.java:31)
-at com.testrunner.UITestRunner.setup(UITestRunner.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 1, executed: [--browser, chrome, --language-binding, java, --output, json]
-
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:159)
-at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:303)
-at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, java.lang.Object)[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-29T12:13:24 IST" name="runScenario" description="Scenario Name: " data-provider="scenarios" finished-at="2024-03-29T12:15:32 IST" duration-ms="127637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify end to end flow dominos Order Multiple NonVeg pizza with Beverages without login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify end to end flow dominos Order Multiple Nonveg pizza without login]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-27T18:38:14 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1711544894495" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-29T12:15:32 IST" name="tearDown" finished-at="2024-03-29T12:15:33 IST" duration-ms="865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-27T18:38:14 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1711544894502" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testrunner.UITestRunner@6f46426d]" started-at="2024-03-29T12:15:33 IST" name="afterClass" finished-at="2024-03-29T12:15:33 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
